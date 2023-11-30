@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description"
     content="LightGaussian efficiently compresses 3D scene data, enhancing performance and reducing storage needs while preserving visual quality.">
-  <meta name="keywords" content="LightGaussian, 3D Gaussian Splatting, Gaussian">
+  <meta name="keywords" content="LightGaussian, lightgaussian, Gaussian Splatting, Gaussian">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LightGaussian: Unbounded 3D Gaussian Compression
     with 15x Reduction and 200+ FPS</title>
@@ -117,7 +117,7 @@
               <!-- <div class="publication-links"> -->
                 <!-- PDF Link. -->
                 <span class="link-block">
-                <a href="https://lightgaussian.github.io/static/paper/LightGaussian_arxiv.pdf"
+                <a href="https://arxiv.org/pdf/2311.17245.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -125,15 +125,15 @@
                   <span>Paper</span>
                 </a>
                 </span>
-                <!-- <span class="link-block">
-                <a href=""
+                <span class="link-block">
+                <a href="https://arxiv.org/abs/2311.17245"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span> -->
+              </span>
                 <!-- Video Link. -->
                 <span class="link-block">
                   <a href="https://youtu.be/470hul75bSM" class="external-link button is-normal is-rounded is-dark">
@@ -183,7 +183,13 @@
     <div class="hero-body">
       <div class="container">
         <div id="results-carousel" class=" carousel results-carousel">
-
+          <div class="item item-room">
+            <video poster="" id="room" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/room_video_comp3.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+  
           <div class="item item-garden">
             <video poster="" id="garden" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/garden_video_comp3.mp4" type="video/mp4">
@@ -209,13 +215,6 @@
               <source src="./static/videos/kitchen_video_comp3.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="item item-room">
-          <video poster="" id="room" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/room_video_comp3.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
         <div class="item item-train">
           <video poster="" id="train" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/train_video_comp3.mp4"
@@ -279,7 +278,7 @@
               to 215,
               enabling an efficient representation of complex scenes on Mip-NeRF 360, Tank & Temple datasets.
             </p>
-            <p>Code and paper will be available soon :)</p>
+            <p>Some sections of the code are publicly accessible, and the complete code will be made available soon :)</p>
 
           </div>
         </div>
@@ -522,18 +521,20 @@
   </div>
 </section> -->
 
-  <!-- 
+  
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{TODO,
-  author    = {},
-  title     = {},
-  journal   = {},
-  year      = {},
+    <pre><code>@misc{fan2023lightgaussian,
+  author    = {Zhiwen Fan and Kevin Wang and Kairun Wen and Zehao Zhu and Dejia Xu and Zhangyang Wang},
+  title     = {LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS},
+  year      ={2023}, 
+  eprint    ={2311.17245}, 
+  archivePrefix={arXiv}, 
+  primaryClass={cs.CV},
 }</code></pre>
   </div>
-</section> -->
+</section>
 
   <!-- TODO: update the arxiv link and github -->
   <footer class="footer">
