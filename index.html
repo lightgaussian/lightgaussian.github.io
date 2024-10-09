@@ -321,15 +321,9 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Method Overview</h2>
           <div class="content has-text-justified">
-            <img src="./static/images/method.png">
+            <img src="./static/images/LG.png">
 
-            <p>The overview of LightGaussian is illustrated above. The 3D-GS model is trained
-              using multi-view images and is initially initialized from SfM point clouds. By expanding the sparse points
-              to millions of Gaussians, the scene is well-represented. Then, the 3D-GS undergoes processing within our
-              pipeline to transform it into a more compact format. This involves utilizing <em>Gaussian Prune and
-                Recovery</em> to reduce the number of Gaussians, <em>SH Distillation</em> to remove redundant SHs while
-              preserving the modeled specular light, and <em>VecTree Quantization</em> to store Gaussians at a lower
-              bit-width.</p>
+              <p><strong>The overall pipeline of LightGaussian.</strong> 3D Gaussians are optimized from multi-view images and SfM points. LightGaussian first calculates the global significance for each Gaussian on training data, where Gaussians with the least significance are pruned. A subsequent distillation with synthesized pseudo-views is introduced to transfer the SH into a compact format. Vector quantization, consisting of codebook initialization and assignment, is further introduced for reducing the model bandwidth.</p>
 
 
 
